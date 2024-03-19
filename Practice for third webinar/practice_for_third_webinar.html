@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="margin-bottom: 5px;">Форма заявки на работу в зоопарке</h1>
+    <em>Пожалуйста, заполните форму. Обязательные поля отмечены &#9913;</em>
+    <pre style="margin-bottom: 15px;"></pre>
+    <form method="post" action="http://fe.it-academy.by/TestForm.php" name="my_form">
+        <fieldset>
+            <legend style="font-size: 18px;">Контактная информация</legend>
+            <label for="name">Имя</label>&#9913;
+            <input type="text" size="30" style="margin-left: 60px; margin-bottom: 11px;" required name="input_1" id="name">
+            <br><label for="phone">Телефон</label>
+            <input type="text" size="30" style="margin-left: 42px; margin-bottom: 10px;" name="input_2" id="phone">
+            <br><label for="Email">Email&#9913;</label>
+            <input type="email" size="30" style="margin-left: 54px;" required name="input_3" id="Email">
+        </fieldset>
+        <fieldset style="margin-top: 10px;">
+            <legend style="font-size: 18 px;">Персональная информация</legend>
+            <label for="age">Возраст</label>&#9913;
+            <input type="text" size="30" style="margin-left: 35px; margin-bottom: 11px;" required name="input_4" id="age">
+            <br><label for="gender">Пол</label>
+            <select style="margin-left: 72px; margin-bottom: 11px; width: 248px;" name="select_1" id="gender">
+                <option>Мужчина</option>
+                <option>Женщина</option>
+            </select>
+            <br>
+            <span  style="display:inline-block; vertical-align: top; margin-top: 0px;">
+                <label for="personal">
+                <br>Введите
+                <br>личные
+                <br>данные
+                </label>
+            </span>
+            <textarea cols="33" rows="5" style="display: inline-block;margin-top: 20px; margin-left: 40px;"
+            name="fieldset_1" id="personal">
+            </textarea>    
+        </fieldset>
+        <fieldset style="margin-top: 10px; margin-bottom: 10px;">
+            <legend style="font-size: 18 px;">
+                Выберите ваших любимых животных
+            </legend>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="animal_1" value="Зебра">Зебра</td>
+                    <td style="padding-left: 50px;"><input type="checkbox" name="animal_2" value="Кошка">Кошка</td>
+                    <td style="padding-left: 50px;"><input type="checkbox" name="animal_3" value="Анаконда">Анаконда</td>
+                    <td style="padding-left: 50px;"><input type="checkbox" name="animal_4" value="Человек">Человек</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="animal_5" value="Слон">Слон</td>
+                    <td style="padding-left: 50px;"><input type="checkbox" name="animal_6" value="Антилопа">Антилопа</td>
+                    <td style="padding-left: 50px;"><input type="checkbox" name="animal_7" value="Голубь">Голубь</td>
+                    <td style="padding-left: 50px;"><input type="checkbox" name="animal_8" value="Краб">Краб</td>
+                </tr>
+            </table>
+        </fieldset>
+        <input name="button" type="submit" value="Отправить информацию">
+    </form>  
+</body>
+</html>
