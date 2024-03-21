@@ -1,0 +1,11 @@
+.class_for_container{background-color: black;
+color: green;
+width: 400px;
+height:auto;
+overflow: auto;}
+
+.for_list{width: 350px;
+    list-style-type: upper-roman;
+}
+.for_second_list{width: 400px;
+    list-style-type: lower-roman;}
