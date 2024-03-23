@@ -1,0 +1,24 @@
+
+.head{text-align: right;
+font-size: large;}
+
+.new_head{text-align: right;
+font-style: normal;
+text-orientation: sideways-right;}
+
+.merienda{
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: larger;
+  text-decoration: underline;
+}
+
+.merienda_2{
+  font-family: "Merienda", cursive;
+  font-style:italic;
+  font-size:normal;
+  font-weight:lighter;
+  text-indent: 20px;
+}
