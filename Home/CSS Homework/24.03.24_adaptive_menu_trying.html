@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{width: 1000px;
+        cursor:pointer;
+        box-sizing: border-box;}
+
+        *{margin: 0;
+        padding: 0;}
+
+        .class_for_menu{
+            display: inline-block;
+            background-color: cadetblue;
+            color: black;
+            width: 100px;
+            height:20px;
+            border-radius: 10px;
+            float:left;
+            border-style: solid;
+            text-align: center;
+        }
+        .class_for_menu:hover{background-color:darkgrey;
+        border: none;}
+        
+        .class_for_hidden_menu{
+            background-color:darkcyan;
+            display: none;
+            width: 100px;
+            height: max-content;
+        }
+
+        .class_for_menu:hover> .class_for_hidden_menu{display:block;
+            border: 1px solid;
+            width: 100px;
+            height: max-content;
+            border-radius: 10px;
+            z-index: 1;}
+
+        .class_for_hidden_menu:hover{background-color: darkorange;
+            color:blue}
+    </style>
+</head>
+<body>
+        <div class="class_for_menu">
+            some_text
+            <div class="class_for_hidden_menu">first</div>
+            <div class="class_for_hidden_menu">second</div>
+            <div class="class_for_hidden_menu">third</div>
+        </div>
+
+        <div class="class_for_menu">
+            some_text
+            <div class="class_for_hidden_menu">first</div>
+            <div class="class_for_hidden_menu">second</div>
+            <div class="class_for_hidden_menu">third</div>
+        </div>
+
+        <div class="class_for_menu">
+            some_text
+            <div class="class_for_hidden_menu">first</div>
+            <div class="class_for_hidden_menu">second</div>
+            <div class="class_for_hidden_menu">third</div>
+        </div>
+
+        <div class="class_for_menu">
+            some_text
+            <div class="class_for_hidden_menu">first</div>
+            <div class="class_for_hidden_menu">second</div>
+            <div class="class_for_hidden_menu">third</div>
+        </div>
+        
+        <div class="class_for_menu">
+            some_text
+            <div class="class_for_hidden_menu">first</div>
+            <div class="class_for_hidden_menu">second</div>
+            <div class="class_for_hidden_menu">third</div>
+        </div>    
+</body>
+</html>
