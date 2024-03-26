@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         body{width: 1000px;
-        cursor:pointer;
-        box-sizing: border-box;}
+            cursor:pointer;
+            box-sizing: border-box;}
 
         *{margin: 0;
-        padding: 0;}
+            padding: 0;}
 
         .class_for_menu{
             display: inline-block;
@@ -20,11 +21,11 @@
             height:20px;
             border-radius: 10px;
             float:left;
-            border-style: solid;
+            border: 1px solid;
             text-align: center;
         }
         .class_for_menu:hover{background-color:darkgrey;
-        border: none;}
+            border: none;}
         
         .class_for_hidden_menu{
             background-color:darkcyan;
@@ -42,42 +43,70 @@
 
         .class_for_hidden_menu:hover{background-color: darkorange;
             color:blue}
+        
+        @media all and (max-width: 500px){
+            .class_for_menu{
+                display: block;
+                float: none;
+            }
+            .class_for_menu:hover{background-color:darkgrey;
+            border: none;}
+        
+        .class_for_hidden_menu{
+            background-color:darkcyan;
+            display: none;
+            width: 100px;
+            height: max-content;
+        }
+
+        .class_for_menu:hover> .class_for_hidden_menu{display:block;
+            position:relative;
+            border: 1px solid;
+            left: 100px;
+            top: -20px;
+            width: 100px;
+            height: max-content;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        .class_for_hidden_menu:hover{background-color: darkorange;
+            color:blue}
+        }
+
     </style>
+
 </head>
 <body>
         <div class="class_for_menu">
-            some_text
-            <div class="class_for_hidden_menu">first</div>
-            <div class="class_for_hidden_menu">second</div>
-            <div class="class_for_hidden_menu">third</div>
+            Понедельник
         </div>
 
         <div class="class_for_menu">
-            some_text
-            <div class="class_for_hidden_menu">first</div>
-            <div class="class_for_hidden_menu">second</div>
-            <div class="class_for_hidden_menu">third</div>
+            Вторник
         </div>
 
         <div class="class_for_menu">
-            some_text
-            <div class="class_for_hidden_menu">first</div>
-            <div class="class_for_hidden_menu">second</div>
-            <div class="class_for_hidden_menu">third</div>
+            Среда
+            <div class="class_for_hidden_menu">Завтрак</div>
+            <div class="class_for_hidden_menu">Обед</div>
+            <div class="class_for_hidden_menu">Ужин</div>
         </div>
 
         <div class="class_for_menu">
-            some_text
-            <div class="class_for_hidden_menu">first</div>
-            <div class="class_for_hidden_menu">second</div>
-            <div class="class_for_hidden_menu">third</div>
+            Четверг
         </div>
         
         <div class="class_for_menu">
-            some_text
-            <div class="class_for_hidden_menu">first</div>
-            <div class="class_for_hidden_menu">second</div>
-            <div class="class_for_hidden_menu">third</div>
+            Пятница
+        </div>
+
+        <div class="class_for_menu">
+            Суббота
+        </div>
+        
+        <div class="class_for_menu">
+            Воскресенье
         </div>    
 </body>
 </html>
