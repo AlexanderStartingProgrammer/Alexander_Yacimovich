@@ -1,0 +1,29 @@
+table{width: auto;
+    height: auto;
+    border-collapse: collapse;
+    border-top: none;
+    caption-side: bottom;
+}
+
+tr{border: dotted 2px;}
+
+th, td{width:auto;
+    text-align: center;
+    vertical-align: top;
+    height: auto;
+    border-right: dotted 2px;
+    border-left: dotted 2px;}
+
+table tr:first-of-type{border-top: hidden;}
+
+table th,td:first-of-type{border-left: hidden;}
+
+table th,td:last-of-type{border-right: hidden;}
+
+tr:nth-child(1){background-color: grey;}
+
+tr:nth-child(3){background-color: thistle;}
+
+tr:nth-child(5){background-color: thistle;}
+
+table tr:hover{background-color:blue;}
