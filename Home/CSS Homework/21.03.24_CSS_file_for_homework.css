@@ -1,8 +1,8 @@
 .class_for_container{background-color: black;
 color: green;
-width: 400px;
-height:auto;
-overflow: auto;}
+width:400px;
+height: 60px;
+overflow-y: scroll;}
 
 .for_list{width: 350px;
     list-style-type: upper-roman;
