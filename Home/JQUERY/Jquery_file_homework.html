@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+    <div id="first_row" class="row row-cols-6">
+        <div class="col">
+            ФИО   
+        </div>
+        <div class="col">
+            ПОЛ
+        </div>
+        <div class="col">
+            ДОЛЖНОСТЬ
+        </div>
+        <div class="col">
+            ДАТА РОЖ.
+        </div>
+        <div class="col">
+            ДАННЫЕ 01
+        </div>
+        <div class="col">
+            ДАННЫЕ 02
+        </div>
+    </div>
+    <div id="second_row" class="row row-cols-6">
+        <div class="col">
+            Иванов Иван Иванович
+        </div>
+        <div class="col">
+            М
+        </div>
+        <div class="col">
+            начальник
+        </div>
+        <div class="col">
+            01.01.1960
+        </div>
+        <div class="col">
+            4567
+        </div>
+        <div class="col">
+            3453
+        </div>
+    </div>
+    <div id="third_row" class="row row-cols-6">
+        <div class="col">
+            Петрова Илона Пертровна
+        </div>
+        <div class="col">
+            Ж
+        </div>
+        <div class="col">
+            секретарь
+        </div>
+        <div class="col">
+            01.01.1989
+        </div>
+        <div class="col">
+            98795
+        </div>
+        <div class="col">
+            46523
+        </div>
+    </div>
+    <div id="fourth_row" class="row row-cols-6">
+        <div class="col">
+            Сидоров Илья Игоревич
+        </div>
+        <div class="col">
+            М
+        </div>
+        <div class="col">
+            бухгалтер
+        </div>
+        <div class="col">
+            01.01.1979
+        </div>
+        <div class="col">
+            743434
+        </div>
+        <div class="col">
+            987979
+        </div>
+    </div>
+    <div id="fifth_row" class="row row-cols-6">
+        <div class="col">
+            Пупин Федор Федорович
+        </div>
+        <div class="col">
+            М
+        </div>
+        <div class="col">
+            водитель
+        </div>
+        <div class="col">
+            01.01.1963
+        </div>
+        <div class="col">
+            74323434
+        </div>
+        <div class="col">
+            9232379
+        </div>
+    </div>
+    <div id="sixth_row" class="row row-cols-6">
+        <div class="col">
+            Купин Сергей Иванович
+        </div>
+        <div class="col">
+            М
+        </div>
+        <div class="col">
+            водитель 2
+        </div>
+        <div class="col">
+            01.01.1983
+        </div>
+        <div class="col">
+            3234534
+        </div>
+        <div class="col">
+            923123379
+        </div>
+    </div>
+    </div>
+    <span><h2 style="font-size: medium; text-align: center;" >ДАННЫЕ О СОТРУДНИКАХ</h2></span>
+    <button id="btn_1" type="button" class="btn btn-primary">Показать все строки</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function($){
+            $(".col").css("overflow", "hidden");
+            $(".col").css("textOverflow", "ellipsis");  
+            $(".col").css("verticalAlign", "top");
+            $(".col").css("borderRight", "1px dotted");
+            $("#first_row").css("backgroundColor", "lime");
+            $("#third_row").css("backgroundColor", "gray");
+            $("#fifth_row").css("backgroundColor", "purple");
+
+            $("#first_row").css("borderBottom", "1px dotted");
+            $("#second_row").css("borderBottom", "1px dotted");
+            $("#third_row").css("borderBottom", "1px dotted");
+            $("#fourth_row").css("borderBottom", "1px dotted");
+            $("#fifth_row").css("borderBottom", "1px dotted");
+            $("#sixth_row").css("borderBottom", "1px dotted");
+
+            $("#first_row").click(function()
+                {$(this).hide()});
+            $("#second_row").click(function()
+                {$(this).hide()});
+            $("#third_row").click(function()
+                {$(this).hide()}); 
+            $("#fourth_row").click(function()
+                {$(this).hide()}); 
+            $("#fifth_row").click(function()
+                {$(this).hide()});
+            $("#sixth_row").click(function()
+                {$(this).hide()});              
+                
+            $("#btn_1").click(function(){
+                $("#first_row").show()});
+            $("#btn_1").click(function(){
+                $("#second_row").show()});
+            $("#btn_1").click(function(){
+                $("#third_row").show()});
+            $("#btn_1").click(function(){
+                $("#fourth_row").show()
+            });
+            $("#btn_1").click(function(){
+                $("#fifth_row").show()
+            }); 
+            $("#btn_1").click(function(){
+                $("#sixth_row").show()
+            });   
+        });
+    </script>
+</body>
+</html>
